@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #7a51a4 ;
+    color: #fff;
+
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    background: linear-gradient(45deg, #63a07d, #ff9a8b, #ff6a00);
+    background-size: 600% 600%;
+    animation: gradientBackground 15s ease infinite;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.container{
+    margin: 12%;
+    width: 90%;
+    max-width: 700px;
+
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+}
+.display{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background: #fff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 20px;
+    border-radius: 5px;
+
+}
+.container h1{
+    font-weight: 500;
+    font-size: 45px;
+}
+.container h1 span{
+    color: #019f55;
+    border-bottom: 4px #019f55;
+    padding-bottom: 7px;
+}
+img{
+    width: 4%;
+}
+.display input{
+    border: 0;
+    outline: 0;
+    font-size: 24px;   
+}
+.container button img{
+    width: 35px;
+    margin-right: 9px;
+    vertical-align: middle;
+    margin-right: 10px;
+
+}
+.container button{
+    border: 0;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    outline: 0;
+    background: #019f55;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 300;
+    padding-top: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 22px;
+
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #22aaa6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #ff9a8b;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    #password {
+        width: 80%;
+    }
+}
+.bubble {
+    position: absolute;
+    bottom: -50px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    animation: bubbleAnimation 10s ease-in-out infinite;
+    z-index: 5;
+}
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@keyframes bubbleAnimation {
+    0% {
+        transform: translateY(100vh);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(-100vh);
+        opacity: 1;
+    }
+}
+.bubble:nth-child(1) {
+    left: 10%;
+    animation-duration: 12s;
+    animation-delay: 0s;
+    width: 30px;
+    height: 30px;
+}
+
+.bubble:nth-child(2) {
+    left: 20%;
+    animation-duration: 14s;
+    animation-delay: 2s;
+    width: 40px;
+    height: 40px;
+}
+
+.bubble:nth-child(3) {
+    left: 30%;
+    animation-duration: 11s;
+    animation-delay: 1s;
+    width: 50px;
+    height: 50px;
+}
+
+.bubble:nth-child(4) {
+    left: 40%;
+    animation-duration: 16s;
+    animation-delay: 4s;
+    width: 35px;
+    height: 35px;
+}
+
+.bubble:nth-child(5) {
+    left: 60%;
+    animation-duration: 13s;
+    animation-delay: 3s;
+    width: 45px;
+    height: 45px;
+}
+
+.bubble:nth-child(6) {
+    left: 80%;
+    animation-duration: 17s;
+    animation-delay: 5s;
+    width: 30px;
+    height: 30px;
+}
